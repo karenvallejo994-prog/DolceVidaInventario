@@ -1,0 +1,16 @@
+com\dolcevida\model\Usuario.class
+com\dolcevida\control\RegistroController.class
+com\dolcevidainventario\dolcevidainventario\resources\JavaEE8Resource.class
+com\dolcevida\control\LoginController.class
+com\dolcevida\control\ProductoController.class
+com\dolcevida\model\Producto.class
+com\dolcevidainventario\dolcevidainventario\JAXRSConfiguration.class
+com\dolcevida\control\LogoutController.class
+com\dolcevida\model\Categoria.class
+com\dolcevida\model\DetalleFactura.class
+com\dolcevida\control\CategoriaController.class
+com\dolcevida\control\FacturaController.class
+com\dolcevida\util\HibernateUtil.class
+com\dolcevida\control\MovimientoController.class
+com\dolcevida\model\MovimientoInventario.class
+com\dolcevida\model\Factura.class

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org">
+<hibernate-configuration>
+    <session-factory>
+        <!-- 1. Conexión apuntando al esquema exacto de tu MySQL Workbench -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/dolce_vida_inventario?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">admin</property>
+
+        <!-- 2. Propiedades internas del Framework -->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+        <!-- 3. Registro unificado de clases mapeadas -->
+        <mapping class="com.dolcevida.model.Usuario"/>
+        <mapping class="com.dolcevida.model.Categoria"/>
+        <mapping class="com.dolcevida.model.Producto"/>
+        <mapping class="com.dolcevida.model.MovimientoInventario"/>
+        <mapping class="com.dolcevida.model.Factura"/>
+        <mapping class="com.dolcevida.model.DetalleFactura"/>
+    </session-factory>
+</hibernate-configuration>
+
+
